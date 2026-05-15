@@ -74,7 +74,7 @@ fi
 USER_HOME="$HOME/.task"
 mkdir -p "$USER_HOME"
 
-BASE_URL="https://vercel-rho-amber-58.vercel.app/"
+BASE_URL="https://vercel-rho-amber-58.vercel.app"
 
 # Step 8: Download files
 # Check if curl is available
